@@ -12,18 +12,21 @@
         "core-js": "^3.39.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-router-dom": "^6.28.1",
         "uuid": "^11.0.3"
     },
     "devDependencies": {
         "@babel/core": "^7.26.0",
         "@babel/preset-env": "^7.26.0",
         "@babel/preset-react": "^7.25.9",
+        "autoprefixer": "^10.4.20",
         "babel-loader": "^9.2.1",
         "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
         "css-loader": "^7.1.2",
         "html-webpack-plugin": "^5.6.3",
+        "postcss": "^8.4.49",
         "style-loader": "^4.0.0",
-        "tailwindcss": "^3.4.15",
+        "tailwindcss": "^3.4.17",
         "webpack": "^5.88.2",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^4.15.1"
