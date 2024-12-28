@@ -1,5 +1,7 @@
+// BlogContent.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/styles.css'; // 引入样式文件
 
 const BlogContent = () => {
     const articles = [
@@ -15,9 +17,11 @@ const BlogContent = () => {
         <div className="grid-container">
             {articles.map(article => (
                 <Link to={`/article/${article.id}`} key={article.id} className="blog-content hover:shadow-lg transition duration-300">
-                    <img src={article.image} alt={article.title} className="w-full h-auto" />
-                    <div className="p-4">
-                        <h2 className="text-xl font-bold mb-2">{article.title}</h2>
+                    <div className="relative">
+                        <img src={`/images/${article.image}`} alt={article.title} className="w-full h-auto" />
+                    </div>
+                    <div className="content-details">
+                        <h2 className="text-xl font-bold mb-2 text-black">{article.title}</h2>
                         <p className="text-gray-600 text-sm">{article.date}</p>
                     </div>
                 </Link>
